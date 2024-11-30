@@ -168,6 +168,7 @@ HTML таблицы
                 hidden - скрывает поле.
                 disabled - Блокирует поле, но оно отображается
                 readonly - Можно считывать, но нельзя вводить.
+                required - Не дает отправить на сервер если не введены данные.
                 Пример: <input type="text" placeholder="Иванов" value="" maxlength="" readonly>
 
             Важные моменты:
@@ -176,18 +177,39 @@ HTML таблицы
                 Нажатие кнопки
                     <input type="submit" value="Отпрвить сообщение">
 
-ГГ
+Поле для ввода текста (большого) и Тег для создания кнопки
+    Нужно использовать тег <form> в начале.
+    <textarea name="" id="" cols="30" rows="10"></textarea> - Тег для ввода большого поля текста. Его можно растягивать в браузере.
+    <button></button> - тег для создания кнопки. type работает как и в input. удобнее использовать.
 
+Селекторы выбора
+   <select name="" id=""></select> - Тег Селектора быбора. дает возможно создать выплывающий список.
+        <option value=""></option> - Тег используемый внутри тега select. 
+    Пример:
+        <select name="" id="">
+            <option value="">Audi</option>
+            <option value="">BMW</option>
+            <option value="">Mersedes</option>
+        </select>
+    Атрибут:
+        size="2" - Показываем выбронное количество вариантов.
+    
+    Доп функции:
+        selected - дает значение по умолчанию. (для option)
+        multiple - Дает возможность выбрать несколько вариантов из списка.
+
+https://www.youtube.com/watch?v=oVqyRw3l3iI
 
 
 -->
 
 
 
-<form action="" method="">
-    <label for="">Напиши информацию</label>
-    <input type="submit" value="Отпрвить сообщение">
-</form>
+<select name="" id="" multiple>
+    <option value="">Audi</option>
+    <option value="">BMW</option>
+    <option value="" selected>Mersedes</option>
+</select>
 
 <!DOCTYPE html>
 <html lang="en">
