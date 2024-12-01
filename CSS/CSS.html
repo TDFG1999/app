@@ -12,7 +12,24 @@ CSS это каскадная таблица стилей.
 Селекторы CSS
     Можно обращаться на прямую к тегу. Можно обращаться к класску (надо в начале писать .). Можно обратиться к индефикатору id (Обращение через #).
     id прописывает для объектов, которые одиночные на странице.
+Псевдоклассы и псевдоэлементы
+    Псевдоклассы
+        С помощью псевдоклассов мы можем управлять различными css свойствами для различных состоянии какого либо объекта.
+            В случае если мы ходим чтобы при наведении менялся цвет текста, то тут они нам и нужны.
+            Псевдоклассы ставятся через 1 доветочие.
+                Пример кода, при наведении мышкой изменение цвета.
+                    .main_link {
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    }
+
+                    .main_link:hover {
+                    color: brown;
+                    text-decoration: underline;
+                    }
+Фоновые картинки на сайте
     
+
 
 
 
@@ -34,7 +51,17 @@ CSS это каскадная таблица стилей.
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-   <p class="main_text">Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Tenetur, obcaecati saepe maxime voluptates delectus sapiente vel earum ipsum cupiditate quod sunt ex autem soluta porro qui eos officia ipsa sint.
-   </p> 
+    <header>
+        <h1 class="fist_text">Начальная страница</h1>
+    </header>
+    <div class="blok"><p>Привет мир</p></div>
+    <div class="blok"><p>я тут</p></div>
+    <div class="blok"><p>Привет мир</p></div>
+    <div class="blok"><p>Привет мир</p></div>
+    <div class="blok"><p>Привет мир</p></div>
+    <div class="blok"><p>Привет мир</p></div>
+    <div class="blok"><p>Привет мир</p></div>
+    <div class="blok"><p>Привет мир</p></div>
+    
 </body>
 </html>
