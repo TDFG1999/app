@@ -1,0 +1,40 @@
+<!-- 
+CSS это каскадная таблица стилей.
+Форматы подключения стилей 3 вида
+    style="" -Атрибут позволяющий писать CSS код внутри HTML. Если много стилей то лучше так не делать.
+    <style></style> - Подключение через head.
+        Пример ко всем тегам p добавить стиль.
+            <style>
+                p {color: brown;}
+            </style>  
+    В отдельном файле. Мы создаем отдельно CSS файл. Всё прописываем как в 2 варианте.
+            Для подключения к HTML используется тег <link rel="stylesheet" href=""> в head.
+Селекторы CSS
+    Можно обращаться на прямую к тегу. Можно обращаться к класску (надо в начале писать .). Можно обратиться к индефикатору id (Обращение через #).
+    id прописывает для объектов, которые одиночные на странице.
+    
+
+
+
+
+
+ -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <p class="main_text">Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Tenetur, obcaecati saepe maxime voluptates delectus sapiente vel earum ipsum cupiditate quod sunt ex autem soluta porro qui eos officia ipsa sint.
+   </p> 
+</body>
+</html>
