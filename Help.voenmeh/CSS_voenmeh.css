@@ -8,7 +8,7 @@ body{
 }
 
 header{
-    background-color: rgba(97, 97, 97, 0.637);
+    background-color: #333333;
     text-align: right;
     width: 100%;
     font-size: 15px;
@@ -22,17 +22,27 @@ header{
     color: white;
 }
 
+#vxod:hover{
+    color: rgb(250, 16, 16);
+}
+
 #log{
-    margin: 5px;
+    padding: 15px 2%;
+    height: 50%;
+    
 
 }
 
 .nast{
     color: white;
-    margin: 3ch;
+    padding: 20px 2%;
     right: 5px;
     display: inline;
     float: right;
+}
+
+.nast:hover{
+    color: rgb(105, 103, 190);
 }
 
 #bg_fut{
@@ -46,52 +56,79 @@ header{
 .left_selection{
     float: left;
     height: 5000px;
-    width: 200px;
+    width: 19%;
     border-radius: 0px 10px 10px 0px;
-    background-color: rgb(187, 190, 243);
+    background-color: #D9ECF4;
 }
 
 .title_left{
     border: 1px solid black;
     border-radius: 0px 10px 0px 0px;
-    background-color: rgb(144, 252, 252);
-    color: rgb(119, 119, 119);
+    background-color: #B0CCD7;
+    color: #004458;
     align-content: center;
-    text-align: center;
+    text-align: left;
+    font-size: 20px;
 }
 
-.ckroler{
+p{
+    margin: 0px 5%;
+}
+
+li{
     text-align: center;
-    border: 0.5px solid rgb(39, 39, 39);
+    border-bottom: 0.1px solid rgb(39, 39, 39);
     height: 30px;
+    align-content: center;
+    text-align: left;
+    transition: 1s;
+}
+
+li:hover{
+    background-color: burlywood;
+}
+
+.scr{
+    color: #376572;
+    text-align: center;
+    margin: 0px 5%;
+}
+
+a{
+    text-decoration: none;
 }
 
 #bel{
     background-color: white;
     height: 5000px;
-    width: 1000px;
+    width: 80%;
     float: right;
     border-radius: 10px 0px 0px 0px;
 }
+
 #voiti{
-    background-color: blue;
-    height: 50px;
-    width: 800px;
-    font-size: 25px;
-    border-radius: 10px;
-    margin: 50px 100px;
+    background-color: #007BFF;
+    height: 1%;
+    width: 95%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 2% 4%;
     text-align: center;
     align-content: center;
+    float: left;
+    transition: 1s;
+    
 
     
     
+}
+
+#voiti:hover{
+    background-color: rgb(0, 0, 0);
 }
 
 a{
     color: white;
 }
 
-#voiti:hover{
-    background-color: rgb(0, 0, 0);
-}
 
