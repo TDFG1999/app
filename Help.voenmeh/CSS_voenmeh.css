@@ -27,8 +27,8 @@ header{
 }
 
 #log{
-    padding: 15px 2%;
-    height: 50%;
+    padding: 10px 2%;
+    height: 70%;
     
 
 }
@@ -42,7 +42,9 @@ header{
 }
 
 .nast:hover{
-    color: rgb(105, 103, 190);
+    color: rgb(102, 100, 248);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 #bg_fut{
@@ -62,13 +64,14 @@ header{
 }
 
 .title_left{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 0px 10px 0px 0px;
     background-color: #B0CCD7;
     color: #004458;
     align-content: center;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
+    height: .7%;
 }
 
 p{
@@ -82,6 +85,7 @@ li{
     align-content: center;
     text-align: left;
     transition: 1s;
+    font-size: 14px;
 }
 
 li:hover{
