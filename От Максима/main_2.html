@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню с выпадающим списком</title>
+    <style>
+        .menu__container {
+            display: flex;
+        }
+        .menu button {
+            width: 100px;
+            height: 100px;
+            border: 5px solid rgb(0, 0, 0);
+            background-image: url(/img/menu.svg); 
+            background-repeat: no-repeat;
+            background-size: 75%;
+            background-position: center;
+
+        }
+        .menu {
+            border: 5px solid rgb(0, 0, 0);
+            margin-left: 30px;
+            width: 300px;
+            overflow: hidden;
+        }
+        .menu-open {
+            display: inline-block;
+        }
+        .menu-close { 
+            display: none;
+        } 
+    </style>
+</head>
+<body>
+    <div class="menu__container">
+        <div class="menu__button"></div>
+
+        <div class="mennu menu-open">
+            <div class="menu_top">
+                <h2>Menu</h2>
+            </div>
+            <ul class="menu__content">
+                <li>Главная</li>
+                <li>O Hac</li>
+                <li>Товары</li>
+                <li>Новости</li>
+                <li>Личный кабинет</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        
+// Проверяет, загружена ли страница
+document.addEventListener("DOMContentLoaded", function() {
+// Находит кнопку по класcy menu_button
+ document.querySelectorAll('.menu_button').forEach(function (menubut) { // Обрабатывает событие нажатия кнопк
+menubut.addEventListener('click', function(menuclick) {
+// Находит меню по классу menu
+document.querySelectorAll('.menu').forEach(function (menuopen)
+// Меняет класс menu-open и menu-close.
+// Если есть класс - убирает, если нет - добавляет
+menuopen.classList.toggle('menu-open');
+menuopen.classList.toggle('menu-close');
+})
+})
+})
+      
+    </script>
+</body>
+</html>

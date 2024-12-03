@@ -201,46 +201,28 @@ HTML таблицы
 https://www.youtube.com/watch?v=oVqyRw3l3iI
 
 
+JS
+<noscript></noscript> - Тег позволяющий написать если выключен JS у пользователя.
+<script></script> - Тег позволяющий подключить JS к странице. Можно прописывать и в Head и в body. Но желательно указывать его в конце тега body.
+<script src="main.js"></script> - Атрибут позволяет подвязать js.
 -->
-
-
-
-<select name="" id="" multiple>
-    <option value="">Audi</option>
-    <option value="">BMW</option>
-    <option value="" selected>Mersedes</option>
-</select>
+<!-- СТОИТ ПОЧИТАТЬ ЧТО ЭТО: 
+1)Адаптивная разработка
+2)Препроцессоры
+3)Симантическую верстку
+4)Столяров
+5)лидкод (сайт с задачками).
+-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="CSS/main.css">
-    <script></script>
+    <title>JS+CSS+HTML</title>
 </head>
 <body>
-    <table border="1" width="500px" >
-        <thead>
-            <tr>
-                <th>Имя</th>
-                <th>Фамилия</th>   
-              </tr>        
-        </thead>
-             
-        <tbody  align="">
-            <tr>
-                <td>john</td>
-                <td>Snow</td> 
-            </tr>
-            <tr>
-                <td>john2</td>
-                <td>Snow2</td> 
-                </tr>
-        </tbody>
-            
-        
-    </table>
+    <noscript>JS отключен</noscript>
+    <script src="main.js"></script>
 </body>
 </html>
