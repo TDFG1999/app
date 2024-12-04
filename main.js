@@ -121,3 +121,53 @@
 
 // ФУНКЦИИ В JS
 
+
+// function info(word){
+//     console.log(word + "!");
+// }
+
+// function summa(a, b){
+//     var res = a + b;
+//     info(res);
+// }
+
+// summa(1, 2);
+
+// function massiv(arr){ // function вызывает позвожность создания функции. massiv название фунции. arr параметр функции (может быть любой. Его можно назхвать как угодно)
+// var sar = 0;
+
+//     for(var i = 0; i<arr.length; i++)
+//         sar += arr[i];
+// return sar; // Внутри функции мы получили переменую которую мы можем вытащить из функциипомощью return. чтобы получить число нужно написать - massiv(array) (то есть назхвание функции с параметром).
+// }
+
+
+
+// var array = [2, 5, 67, 0, 0];
+// var res = massiv(array);
+// console.log(massiv(array));
+// console.log(res);
+
+// локальная переменная, которая видна только внутри функции. Глобальная это общая переменная.
+
+// СОБЫТИЯ И ОБРАБОТЧИК СОБЫТИЙ
+
+
+//var counter = 0;
+
+//function onClickButton(el){
+    //counter++;
+    //el.innerHTML = "Вы нажали на кнопку: "  + counter; // .innerHTML - Позволяет передать на тег данные полученые с функции.
+    //el.style.background = "red"; // style - позволяет менять определенный параметр css.
+    //el.style.cssText = "border-radius: 5px; border: 0; font-size: 20px"; // style.cssText опзволяет сделать множество изменений css наведении или нажатии.
+//}
+
+//var spans = document.getElementsByTagName ('span');// document - через этот объект можно управлять всей структурой веб сайта. .getElementById Получить элемент по его id
+// for(i=0; i < spans.length; i++ ){
+ //   console.log(spans[i].innerHTML); // В данном случае позволяет вытянуть значение внутри тега
+//
+ //}
+
+ function checkForm (form){
+    
+ }
