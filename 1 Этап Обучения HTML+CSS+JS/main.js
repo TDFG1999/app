@@ -168,6 +168,108 @@
 //
  //}
 
- function checkForm (form){
+
+
+//  ПРоверка формы и вывод JS вне html
+//  document.getElementById('main_form').addEventListener("submit", checkForm);
+//  function checkForm (event){
+   // event.preventDefault(); // Предотврощает перезагрузку страницы
+    // var form = document.getElementById('main_form');
+
+    // var name = form.name.value;
+    // var pass = form.pass.value;
+    // var repass = form.repass.value;
+    // var male = form.state.value;
+
+    // var fail = "";  
+      
+    // if(!name || !pass || !male){
+    //     fail = "Вы не заполнили все поля";
+    // }else if(name.length <= 2 || name.length >= 50){
+    //     fail = "Введите корректное имя";
+    // }else if(pass !== repass){
+    //     fail = "Вы не правильно повторили пароль";
+    //}else if(pass.split('&').length > 1){ // split позволяет выискивать определенные символы. length говорит их количество
+    //     fail = "Некорректный пароль";
+    // }
     
- }
+    // if(fail){
+    //     document.getElementById('error').innerHTML = fail; 
+    //     return false;
+    // } else {
+    //     alert("Все данные корректно заполнены");
+    //    window.location = "https://getbootstrap.com/docs/5.3/getting-started/introduction/" // позволяет при заполнении формы переводить на другую страницу
+    //    return false; // В случае если нужно перейти на другую странциу пишем false, А если на этой же странице, то True (тогда страница просто обновится)
+    //}
+
+//}
+
+
+// Таймеры и интервалы
+//setInterval(my_func, 1000); //Время указывается в милисекундах. setInterval позволяет выполнять определенный код бесконечное количество раз
+// var counter = 0;
+// function my_func(){
+//     counter++
+//     console.log(counter);
+// }
+
+// var counter = 0; Структура, когда функция сразу внутри интервала
+// setInterval(function() {
+// counter++;
+// console.log(counter);
+// }, 1000);
+
+// var di = setInterval(my_func, 1000); //Время указывается в милисекундах. setInterval позволяет выполнять определенный код бесконечное количество раз
+// var counter = 0;
+// function my_func(){
+//     counter++
+//     console.log(counter);
+//     if(counter == 3){
+//         clearInterval(di); // позволяет остановить интервал, в данном случае после 3 повторений отключает.
+//     }
+// }
+
+// var counter = 0;
+// setTimeout(my_func, 2000) // Таймер
+// function my_func(){
+//         counter++
+//         console.log(counter);
+// }
+
+// Создание объектов. Встроенные функции.
+ 
+// var date = new Date(); // закидывает объект даты в переменную date.
+// console.log(date.getFullYear()); // выводит в консоль сегодняшний год.
+// console.log(date.getMonth()); // выводит в консоль сегодняшний год.
+// console.log(date.getDate()); // выводит в консоль сегодняшний год.
+// console.log(date.getDay()); // выводит в консоль сегодняшний год.
+// console.log(date.getHours()); // выводит в консоль сегодняшний год.
+
+// var arr = [2, 4, 5, 6];
+// var strike = arr.reverse().join(", "); // запишет массив в строку
+// arr.length // выводит количество элементов
+// arr.join(", ") // выводит каждый элшемент и разделяет их ", ". Также делает данные из массива строкой.
+// arr.sort() // массив будет сортироваться по порядку.
+// arr.reverse()// массив будет перевернут местами
+// arr.reverse().join(", ")// Так тоже можно прописывать
+
+// strike.split(", ") // делает из строки массив, разбивая по элементам которые указаны в join. получим массив из строк.
+
+// Классы. Объекты. За счет класса можно ввыпонить описание предмета из жизни. Внутрои класса создается различные переменные.
+
+// class person{ // Мы создали класс с 3 параметрами.
+//     constructor(name, age, happiness){ // необходимый модуль класса в котором указываются параметры
+//       this.name = name;
+//       this.age = age;
+//       this.happiness = happiness;
+//     }
+//     info(){ // Внутри класса содается функция info котороая включается при написани тупо alex.info();
+//         console.log("Человек" + this.name);
+//     }
+// }
+// var alex = new person('alex', 45, 100); // new выделяет память под класс. person имя класса
+// console.log(alex.name); // Выведет имя в консоль
+
+// REACT JS
+
+
